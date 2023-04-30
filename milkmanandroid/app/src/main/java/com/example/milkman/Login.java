@@ -64,13 +64,17 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = password;
-                            PutData putData = new PutData("http://192.168.43.244/milkmanserver/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.111.67/milkman/milkmanserver/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
                                     progressBar.setVisibility(View.GONE);
                                     String result = putData.getResult();
                                     if (result.equals("Login Success")) {
+
+                                        Intent intent=new Intent(Login.this,Otp_Validation.class);
+                                        startActivity(intent);
+                                        finish();
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
 
 

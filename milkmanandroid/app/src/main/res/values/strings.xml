@@ -8,4 +8,5 @@
     <string name="loginhere">Login Hear</string>
     <string name="email">Email</string>
     <string name="signuphere">Not Have A Account Create hear</string>
+    <string name="enter_your_otp">Enter Your Otp</string>
 </resources>

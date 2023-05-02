@@ -50,7 +50,7 @@ public class Otp_Validation extends AppCompatActivity {
                             //Creating array for data
                             String[] data = new String[1];
                             data[0] = androidOtp;
-                            PutData putData = new PutData("http://192.168.111.67/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

@@ -72,7 +72,7 @@ public class SignUP extends AppCompatActivity {
                             data[1] = username;
                             data[2] = password;
                             data[3] = email;
-                            PutData putData = new PutData("http://192.168.43.244/milkmanserver/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

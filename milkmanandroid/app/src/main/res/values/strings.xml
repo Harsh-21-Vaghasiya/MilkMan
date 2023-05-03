@@ -14,4 +14,6 @@
     <string name="did_t_receive_code">Did\'t Receive Code?</string>
     <string name="verify_your_account">Verify Your Account</string>
     <string name="resend_it">Resend It</string>
+    <string name="enter_your_mobile_no">Enter Your Mobile No</string>
+    <string name="send_otp">Send Otp</string>
 </resources>

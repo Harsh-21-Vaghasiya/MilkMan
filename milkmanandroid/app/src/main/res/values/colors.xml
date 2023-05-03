@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="otpback">#E5E5E5</color>
     <color name="Green">#00ff00</color>
+    <color name="blue">#0000FF</color>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">दूधवाला</string>
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉग इन</string>
+    <string name="signup">साइन अप</string>
+    <string name="fullname">पूरा नाम</string>
+    <string name="loginhere">यहां लॉगिन करें</string>
+    <string name="email">ईमेल</string>
+    <string name="signuphere">खाता नहीं है, यहां एक बनाएं</string>
+    <string name="enter_your_otp">अपना ओटीपी दर्ज करें</string>
+    <string name="verify">सत्यापित करना</string>
+    <string name="your_otp_hear">अपना ओटीपी यहां दर्ज करें</string>
+    <string name="did_t_receive_code">कोड प्राप्त नहीं हुआ?</string>
+    <string name="verify_your_account">अपने खाते को सत्यापित करें</string>
+    <string name="resend_it">इसे फिर से भेजें</string>
+    <string name="confirmProvider">यदि आप प्रदाता हैं तो कॉल करें</string>
+    <string name="confirmCustomer">अगर आप ग्राहक हैं तो स्किप करें</string>
+    <string name="Skip">छोडना</string>
+</resources>

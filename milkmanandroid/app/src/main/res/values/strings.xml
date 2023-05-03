@@ -5,13 +5,16 @@
     <string name="login">Login</string>
     <string name="signup">Signup</string>
     <string name="fullname">FullName</string>
-    <string name="loginhere">Login Hear</string>
+    <string name="loginhere">Login Here</string>
     <string name="email">Email</string>
-    <string name="signuphere">Not Have A Account Create hear</string>
+    <string name="signuphere">Not Have An Account, Create here</string>
     <string name="enter_your_otp">Enter Your Otp</string>
     <string name="verify">Verify</string>
-    <string name="your_otp_hear">Your Otp Hear</string>
+    <string name="your_otp_hear">Enter Your Otp Here</string>
     <string name="did_t_receive_code">Did\'t Receive Code?</string>
     <string name="verify_your_account">Verify Your Account</string>
     <string name="resend_it">Resend It</string>
+    <string name="confirmProvider">If you are Provider then call</string>
+    <string name="confirmCustomer">If  you are customer then skip</string>
+    <string name="Skip">Skip</string>
 </resources>

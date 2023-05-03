@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">દૂધવાળો</string>
+    <string name="username">વપરાશકર્તા નામ</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="login">સાઇન ઇન કરો</string>
+    <string name="signup">સાઇન અપ</string>
+    <string name="fullname">પૂરું નામ</string>
+    <string name="loginhere">અહીં લોગિન કરો</string>
+    <string name="email">ઈ-મેલ</string>
+    <string name="signuphere">તમારી પાસે એકાઉન્ટ નથી, અહીં એક બનાવો</string>
+    <string name="enter_your_otp">તમારો OTP દાખલ કરો</string>
+    <string name="verify">ચકાસો</string>
+    <string name="your_otp_hear">અહીં તમારો OTP દાખલ કરો</string>
+    <string name="did_t_receive_code">કોડ મળ્યો નથી?</string>
+    <string name="verify_your_account">તમારું એકાઉન્ટ ચકાસો</string>
+    <string name="resend_it">તેને ફરીથી મોકલો</string>
+    <string name="confirmProvider">જો તમે પ્રદાતા હો તો કૉલ કરો</string>
+    <string name="confirmCustomer">જો તમે સબ્સ્ક્રાઇબર છો તો છોડો</string>
+    <string name="Skip">અવગણો</string>
+</resources>

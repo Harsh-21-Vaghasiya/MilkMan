@@ -17,4 +17,8 @@
     <string name="confirmProvider">If you are Provider then call</string>
     <string name="confirmCustomer">If  you are customer then skip</string>
     <string name="Skip">Skip</string>
+    <string name="enter_your_mobile_no">Enter Your Mobile No</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="Address">Address</string>
 </resources>

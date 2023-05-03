@@ -18,4 +18,8 @@
     <string name="confirmProvider">જો તમે પ્રદાતા હો તો કૉલ કરો</string>
     <string name="confirmCustomer">જો તમે સબ્સ્ક્રાઇબર છો તો છોડો</string>
     <string name="Skip">અવગણો</string>
+    <string name="enter_your_mobile_no">તમારો મોબાઈલ નંબર દાખલ કરો</string>
+    <string name="send_otp">ઓટીપી મોકલો</string>
+    <string name="mobile_no">મોબાઈલ નમ્બર</string>
+    <string name="Address">સરનામું</string>
 </resources>

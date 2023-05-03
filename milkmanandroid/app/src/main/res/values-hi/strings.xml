@@ -18,4 +18,8 @@
     <string name="confirmProvider">यदि आप प्रदाता हैं तो कॉल करें</string>
     <string name="confirmCustomer">अगर आप ग्राहक हैं तो स्किप करें</string>
     <string name="Skip">छोडना</string>
+    <string name="enter_your_mobile_no">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="mobile_no">मोबाइल नहीं है</string>
+    <string name="Address">पता</string>
 </resources>

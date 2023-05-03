@@ -71,7 +71,7 @@ public class Login extends AppCompatActivity {
                                     String result = putData.getResult();
                                     if (result.equals("Login Success")) {
 
-                                        Intent intent = new Intent(Login.this, Otp_Validation.class);
+                                        Intent intent = new Intent(Login.this, acitivity_task_list.class);
                                         startActivity(intent);
                                         finish();
 //                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();

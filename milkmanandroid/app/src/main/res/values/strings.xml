@@ -9,4 +9,9 @@
     <string name="email">Email</string>
     <string name="signuphere">Not Have A Account Create hear</string>
     <string name="enter_your_otp">Enter Your Otp</string>
+    <string name="verify">Verify</string>
+    <string name="your_otp_hear">Your Otp Hear</string>
+    <string name="did_t_receive_code">Did\'t Receive Code?</string>
+    <string name="verify_your_account">Verify Your Account</string>
+    <string name="resend_it">Resend It</string>
 </resources>

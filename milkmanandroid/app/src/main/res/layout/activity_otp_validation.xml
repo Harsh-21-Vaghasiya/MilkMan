@@ -1,46 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Otp_Validation">
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Enter_Your_Opt_Text_Box"
+    <TextView
+        android:id="@+id/verify_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="30dp"
+        android:text="@string/verify"
+        android:textAlignment="viewStart"
+        android:textSize="70sp"></TextView>
+
+    <TextView
+        android:id="@+id/verify_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify_text"
+        android:layout_marginTop="5dp"
+        android:paddingStart="35dp"
+        android:text="@string/your_otp_hear"
+        android:textAlignment="viewStart"
+        android:textSize="40sp"></TextView>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/verify_text_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:inputType="number"
+        android:itemBackground="@color/otpback"
+        android:textSize="15dp"
+        app:itemHeight="60dp"
+        app:itemRadius="10dp"
+        app:itemSpacing="20dp"
+        app:itemWidth="60dp"
+        app:viewType="rectangle">
+
+
+    </com.chaos.view.PinView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_view"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/resend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/did_t_receive_code"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/resend_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/resend_text"
+            android:text="@string/resend_it"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="@string/enter_your_otp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Otp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsbold" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <Button
+        android:layout_marginBottom="30dp"
+        android:background="@color/Green"
+        android:text="@string/verify_your_account"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:id="@+id/buttonOtp"
+        android:shadowRadius="@integer/material_motion_duration_long_1">
 
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Enter_Your_Opt_Text_Box"
-        app:layout_constraintVertical_bias="0.18">
 
-    </Button>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
+

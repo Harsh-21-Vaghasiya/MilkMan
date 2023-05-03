@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.milkman.GLOBAL.Gloabal_details;
 import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
@@ -72,7 +73,7 @@ public class SignUP extends AppCompatActivity {
                             data[1] = username;
                             data[2] = password;
                             data[3] = email;
-                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://"+ Gloabal_details.IP+":"+ Gloabal_details.PORT +"/milkman/milkmanserver/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

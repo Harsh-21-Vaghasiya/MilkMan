@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.milkman.GLOBAL.Gloabal_details;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
@@ -51,7 +52,7 @@ public class Otp_Validation extends AppCompatActivity {
                             //Creating array for data
                             String[] data = new String[1];
                             data[0] = androidOtp;
-                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
+                            PutData putData = new PutData("http://"+Gloabal_details.IP+":"+ Gloabal_details.PORT +"/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 

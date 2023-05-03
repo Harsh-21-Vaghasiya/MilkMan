@@ -30,6 +30,7 @@
 
         <Button
             android:layout_width="wrap_content"
+            android:id="@+id/firstpagelogin"
             android:layout_height="wrap_content"
             android:layout_marginRight="20sp"
             android:text="Login" />
@@ -37,6 +38,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:id="@+id/firstpagesignup"
             android:text="Signup"/>
     </LinearLayout>
 

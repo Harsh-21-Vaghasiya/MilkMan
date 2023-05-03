@@ -2,6 +2,7 @@ package com.example.milkman;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -50,7 +51,7 @@ public class Otp_Validation extends AppCompatActivity {
                             //Creating array for data
                             String[] data = new String[1];
                             data[0] = androidOtp;
-                            PutData putData = new PutData("http://192.168.21.67/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/otp_authentication.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -60,6 +61,9 @@ public class Otp_Validation extends AppCompatActivity {
 
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
 
+                                        Intent intent=new Intent(Otp_Validation.this,acitivity_task_list.class);
+                                        startActivity(intent);
+                                        finish();
 
                                     } else {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();

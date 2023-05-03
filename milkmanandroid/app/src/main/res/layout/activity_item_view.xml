@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".item_view">
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#EAEAEA"
+    android:padding="6dp"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    \
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        android:minLines="1"
+        android:maxLines="1"
+        tools:text="Utsav" />
+
+    <LinearLayout
+        android:layout_marginLeft="4dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:text="ગાયનું દૂધ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cowMilk"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            android:text="0 ltr"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:text="ભેંસનું દૂધ"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/buffMilk"
+            android:layout_width="64dp"
+            android:layout_height="26dp"
+            android:text="0 ltr"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:layout_margin="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="અપાઈ ગયું"
+            android:background="#FFC107"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+</LinearLayout>

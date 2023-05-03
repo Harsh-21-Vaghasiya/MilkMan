@@ -27,24 +27,22 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        textInputEditTextUsername=findViewById(R.id.username);
-        textInputEditTextPassword=findViewById(R.id.password);
-        buttonLogin=findViewById(R.id.buttonLogin);
-        textViewSignUp=findViewById(R.id.signUpText);
-        progressBar=findViewById(R.id.progress);
+        textInputEditTextUsername = findViewById(R.id.username);
+        textInputEditTextPassword = findViewById(R.id.password);
+        buttonLogin = findViewById(R.id.buttonLogin);
+        textViewSignUp = findViewById(R.id.signUpText);
+        progressBar = findViewById(R.id.progress);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String username,password;
+                String username, password;
 
                 username = String.valueOf(textInputEditTextUsername.getText());
                 password = String.valueOf(textInputEditTextPassword.getText());
 
 
-
-
-                if ( !username.equals("") && !password.equals("")) {
+                if (!username.equals("") && !password.equals("")) {
 
                     progressBar.setVisibility(View.VISIBLE);
 
@@ -64,7 +62,7 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = username;
                             data[1] = password;
-                            PutData putData = new PutData("http://192.168.43.244/milkman/milkmanserver/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.21.67/milkman/milkmanserver/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -72,10 +70,10 @@ public class Login extends AppCompatActivity {
                                     String result = putData.getResult();
                                     if (result.equals("Login Success")) {
 
-                                        Intent intent=new Intent(Login.this,Otp_Validation.class);
+                                        Intent intent = new Intent(Login.this, Otp_Validation.class);
                                         startActivity(intent);
                                         finish();
-                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
+//                                        Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
 
 
                                     } else {
@@ -92,30 +90,13 @@ public class Login extends AppCompatActivity {
                 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             }
         });
 
         textViewSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Login.this,SignUP.class);
+                Intent intent = new Intent(Login.this, SignUP.class);
                 startActivity(intent);
                 finish();
             }

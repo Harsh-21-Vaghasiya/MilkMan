@@ -53,7 +53,7 @@ public class Otp_Validation extends AppCompatActivity {
                 if (androidOtp.equals(otp_from_mobile_no_auth)) {
                     Toast.makeText(getApplicationContext(), "Mobile no sucessfull Authenticated", Toast.LENGTH_LONG).show();
 
-                    Intent intent = new Intent(Otp_Validation.this, acitivity_task_list.class);
+                    Intent intent = new Intent(Otp_Validation.this, firstpage.class);
                     startActivity(intent);
                     finish();
                 }

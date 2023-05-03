@@ -16,7 +16,7 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class SignUP extends AppCompatActivity {
-    TextInputEditText textInputEditTextFullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextEmail;
+    TextInputEditText textInputEditTextFullname, textInputEditTextUsername, textInputEditTextPassword, textInputEditTextAddress, textInputEditTextMobileNo;
     Button buttonSignUp;
     TextView textViewLogin;
     ProgressBar progressBar;
@@ -28,11 +28,12 @@ public class SignUP extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
 
-        textInputEditTextEmail = findViewById(R.id.email);
+        textInputEditTextAddress = findViewById(R.id.address);
         textInputEditTextFullname = findViewById(R.id.fullname);
         textViewLogin = findViewById(R.id.loginText);
         textInputEditTextPassword = findViewById(R.id.password);
         textInputEditTextUsername = findViewById(R.id.username);
+        textInputEditTextMobileNo = findViewById(R.id.signuppagemobileno);
         buttonSignUp = findViewById(R.id.buttonSignUp);
         progressBar = findViewById(R.id.progress);
 
@@ -41,15 +42,16 @@ public class SignUP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String username, password, email, fullname;
+                String username, password, address, fullname, mobileno;
                 fullname = String.valueOf(textInputEditTextFullname.getText());
                 username = String.valueOf(textInputEditTextUsername.getText());
-                email = String.valueOf(textInputEditTextEmail.getText());
+                address = String.valueOf(textInputEditTextAddress.getText());
                 password = String.valueOf(textInputEditTextPassword.getText());
+                mobileno = String.valueOf(textInputEditTextMobileNo.getText());
 
 // cheaking for the value of above filelds is null or not
 
-                if (!fullname.equals("") && !username.equals("") && !email.equals("") && !password.equals("")) {
+                if (!fullname.equals("") && !username.equals("") && !address.equals("") && !password.equals("")) {
 
                     progressBar.setVisibility(View.VISIBLE);
 
@@ -60,20 +62,22 @@ public class SignUP extends AppCompatActivity {
                         public void run() {
                             //Starting Write and Read data with URL
                             //Creating array for parameters
-                            String[] field = new String[4];
+                            String[] field = new String[5];
                             field[0] = "fullname";
                             field[1] = "username";
                             field[2] = "password";
-                            field[3] = "email";
+                            field[3] = "address";
+                            field[4] = "mobileno";
 
 
                             //Creating array for data
-                            String[] data = new String[4];
+                            String[] data = new String[5];
                             data[0] = fullname;
                             data[1] = username;
                             data[2] = password;
-                            data[3] = email;
-                            PutData putData = new PutData("http://"+ Gloabal_details.IP+":"+ Gloabal_details.PORT +"/milkman/milkmanserver/signup.php", "POST", field, data);
+                            data[3] = address;
+                            data[4] = mobileno;
+                            PutData putData = new PutData("http://" + Gloabal_details.IP + ":" + Gloabal_details.PORT + "/milkman/milkmanserver/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
 
@@ -105,7 +109,7 @@ public class SignUP extends AppCompatActivity {
         textViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SignUP.this,Login.class);
+                Intent intent = new Intent(SignUP.this, Login.class);
                 startActivity(intent);
                 finish();
             }

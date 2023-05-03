@@ -16,4 +16,6 @@
     <string name="resend_it">Resend It</string>
     <string name="enter_your_mobile_no">Enter Your Mobile No</string>
     <string name="send_otp">Send Otp</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="Address">Address</string>
 </resources>

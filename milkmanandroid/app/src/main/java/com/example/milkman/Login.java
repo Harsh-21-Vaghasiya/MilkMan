@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -78,6 +79,7 @@ public class Login extends AppCompatActivity {
 
 
                                     } else {
+                                        Log.e("errorr","error in login maybe sql"+result);
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
                                     }
                                     //End ProgressBar (Set visibility to GONE)

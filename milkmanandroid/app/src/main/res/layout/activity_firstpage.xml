@@ -19,28 +19,68 @@
         app:layout_constraintVertical_bias="0.13999999" />
 
 
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <RadioButton
+            android:id="@+id/select_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="change_lang"
+            android:text="@string/english"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/select_gujrati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="change_lang"
+            android:text="@string/Gujrati"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/select_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="change_lang"
+            android:text="@string/hindi"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RadioGroup>
+
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
 
         <Button
-            android:layout_width="wrap_content"
             android:id="@+id/firstpagelogin"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20sp"
-            android:text="Login" />
+            android:text="@string/login" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
             android:id="@+id/firstpagesignup"
-            android:text="Signup"/>
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="@string/signup" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

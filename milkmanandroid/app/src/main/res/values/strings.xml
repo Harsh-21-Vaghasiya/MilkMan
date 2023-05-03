@@ -21,4 +21,7 @@
     <string name="send_otp">Send Otp</string>
     <string name="mobile_no">Mobile No</string>
     <string name="Address">Address</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिंदी</string>
+    <string name="Gujrati" translatable="false">ગુજરાતી</string>
 </resources>

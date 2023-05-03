@@ -36,7 +36,7 @@ public class Call_Register_Activity extends AppCompatActivity {
             }
 
         }catch(Exception e){
-            Log.e("error","error at call_register_actibity.java as "+ e.getMessage());
+            Log.e("errorr","error at call_register_actibity.java as "+ e.getMessage());
         }
     }
 
@@ -45,7 +45,7 @@ public class Call_Register_Activity extends AppCompatActivity {
             Intent i = new Intent(this, SignUP.class);
             startActivity(i);
         }catch(Exception e){
-            Log.e("error","error at call_register_activity.java as "+ e.getMessage());
+            Log.e("errorr","error at call_register_activity.java as "+ e.getMessage());
         }
     }
 

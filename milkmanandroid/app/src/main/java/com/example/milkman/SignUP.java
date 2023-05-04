@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,11 +44,16 @@ public class SignUP extends AppCompatActivity {
             public void onClick(View view) {
 
                 String username, password, address, fullname, mobileno;
-                fullname = String.valueOf(textInputEditTextFullname.getText());
-                username = String.valueOf(textInputEditTextUsername.getText());
-                address = String.valueOf(textInputEditTextAddress.getText());
-                password = String.valueOf(textInputEditTextPassword.getText());
-                mobileno = String.valueOf(textInputEditTextMobileNo.getText());
+                fullname = ((EditText)findViewById(R.id.fullname)).getText().toString();
+                username = ((EditText)findViewById(R.id.username)).getText().toString();
+                password = ((EditText)findViewById(R.id.password)).getText().toString();
+                address = ((EditText)findViewById(R.id.address)).getText().toString();
+                mobileno = ((EditText)findViewById(R.id.signuppagemobileno)).getText().toString();
+//                fullname = String.valueOf(textInputEditTextFullname.getText());
+//                username = String.valueOf(textInputEditTextUsername.getText());
+//                address = String.valueOf(textInputEditTextAddress.getText());
+//                password = String.valueOf(textInputEditTextPassword.getText());
+//                mobileno = String.valueOf(textInputEditTextMobileNo.getText());
 
 // cheaking for the value of above filelds is null or not
 
@@ -100,6 +106,7 @@ public class SignUP extends AppCompatActivity {
                         }
                     });
                 } else {
+                    Toast.makeText(getApplicationContext(),"is here",Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "All the fields are required", Toast.LENGTH_LONG).show();
                 }
             }

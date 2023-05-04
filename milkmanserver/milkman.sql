@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2023 at 07:04 PM
+-- Generation Time: Apr 30, 2023 at 05:31 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -32,19 +32,18 @@ CREATE TABLE `users` (
   `fullname` text NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` text NOT NULL,
-  `address` varchar(300) NOT NULL,
-  `mobileno` varchar(255) NOT NULL
+  `email` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `address`, `mobileno`) VALUES
-(32, '1', '1', '$2y$10$fvjoyX5TnPosVCBU2Ptrh.ccTBpSxApha87qAuc73Wu7fGCvwWp4q', '1', ''),
-(33, '2', '2', '$2y$10$2jcKt2G/2yCFX7/4wHeBWOF9JWQYv4sODsxxEiTqrTkteUafcn67G', '2', ''),
-(34, '6', '6', '$2y$10$eLMNMh0nZHQVitl7N4gtPOMP1u6Ued2IpNSV9Osp28f1Jk19GF.3i', '6', '6'),
-(35, '7', '7', '$2y$10$hItdAqNlblkKu4fm6SKgm.ztNSx3JqXnaSUsklAeMoKX9vEI899Aa', '7', '7');
+INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `email`) VALUES
+(21, '1', '1', '$2y$10$J0bhwytrYaLySMxgMfuQgu7iQMxfMVOmm.IC8Z8hpDCEfhi9EqCAS', '1'),
+(22, '2', '2', '$2y$10$gcFmacpWsrHZ5RWa92R3xeYdLBmRIbnbUXxLxW19N2zTzVWRMG0sG', '2'),
+(23, '3', '3', '$2y$10$o2CWfGpZpcRC55s0uAUXKeTfgDxm2oVCD2bF36Cy8yyHAm9tA9Qmm', '3'),
+(24, '4', '4', '$2y$10$CkMsppxKrc/p/TBY9HUSFO4lwpnbXlHmnTItJ46VVubIOeM2Ai5jO', '4');
 
 --
 -- Indexes for dumped tables
@@ -56,7 +55,7 @@ INSERT INTO `users` (`id`, `fullname`, `username`, `password`, `address`, `mobil
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`),
-  ADD UNIQUE KEY `email` (`address`);
+  ADD UNIQUE KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -66,7 +65,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

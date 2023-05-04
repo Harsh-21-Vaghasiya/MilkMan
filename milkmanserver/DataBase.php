@@ -21,11 +21,55 @@ class DataBase
         $this->username = $dbc->username;
         $this->password = $dbc->password;
         $this->databasename = $dbc->databasename;
+
+    }
+
+    function initialize(){
+        try{
+        $this->connect = mysqli_connect($this->servername, $this->username, $this->password);
+
+        if($this->connect->connect_error){
+            die("Connection failed: " . $this->connect->connect_error);
+        }
+
+        $sql = 'CREATE DATABASE milkman';
+        echo $sql;
+        if ($this->connect->query($sql)) {
+            echo "Database created successfully";
+        } else {
+            echo "Error creating database: " . mysqli_error($this->connect);
+        }
+
+        $this->connect = mysqli_connect($this->servername, $this->username, $this->password, $this->databasename);
+        $sql2 = "CREATE TABLE users (
+            id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            fullname VARCHAR(30) NOT NULL,
+            username VARCHAR(30) NOT NULL,
+            password VARCHAR(50) NOT NULL,
+            email VARCHAR(50) NOT NULL,
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+        
+
+        if ($this->connect->query($sql2)) {
+            echo "Table users created successfully";
+        } else {
+            echo "Error creating table: " . mysqli_error($this->connect);
+        }
+        $this->connect = mysqli_connect($this->servername, $this->username, $this->password, $this->databasename);
+    }catch(Exception $e){
+        echo "Error: " . $e->getMessage();
+    }
     }
 
     function dbConnect()
     {
+        try{
         $this->connect = mysqli_connect($this->servername, $this->username, $this->password, $this->databasename);
+        }catch(Exception $e){
+            $this->initialize();
+            return $this->connect;
+        }
         return $this->connect;
     }
 
@@ -36,6 +80,7 @@ class DataBase
 
     function logIn($table, $username, $password)
     {
+        $this->connect = mysqli_connect($this->servername,$this->username, $this->password, $this->databasename);
         $username = $this->prepareData($username);
         $password = $this->prepareData($password);
         $this->sql = "select * from " . $table . " where username = '" . $username . "'";
@@ -52,16 +97,15 @@ class DataBase
         return $login;
     }
 
-    function signUp($table, $fullname, $address, $username, $password,$mobileno)
+    function signUp($table, $fullname, $email, $username, $password)
     {
         $fullname = $this->prepareData($fullname);
         $username = $this->prepareData($username);
         $password = $this->prepareData($password);
-        $address = $this->prepareData($address);
-        $mobileno=$this->prepareData($mobileno);
+        $email = $this->prepareData($email);
         $password = password_hash($password, PASSWORD_DEFAULT);
         $this->sql =
-            "INSERT INTO " . $table . " (fullname, username, password, address,mobileno) VALUES ('" . $fullname . "','" . $username . "','" . $password . "','" . $address . "','" . $mobileno . "')";
+            "INSERT INTO " . $table . " (fullname, username, password, email) VALUES ('" . $fullname . "','" . $username . "','" . $password . "','" . $email . "')";
         if (mysqli_query($this->connect, $this->sql)) {
             return true;
         } else return false;

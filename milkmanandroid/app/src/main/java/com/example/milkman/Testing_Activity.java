@@ -18,7 +18,7 @@ public class Testing_Activity extends AppCompatActivity {
         startActivity(i);
     }
     public void normal(View view){
-        Intent i = new Intent(this, firstpage.class);
+        Intent i = new Intent(this, mobileNo_auth.class);
         startActivity(i);
     }
 }

@@ -9,9 +9,9 @@ import java.util.Locale;
 
 public class Gloabal_details {
 //    public static String IP = "192.168.62.67";
-    public static String IP = "192.168.233.88";
-//    public static String PORT = "80";
-    public static String PORT = "8080";
+    public static String IP = "192.168.1.13";
+    public static String PORT = "80";
+//    public static String PORT = "8080";
 
     public void change_language(String language, Context context){
         try {

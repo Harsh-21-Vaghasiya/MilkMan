@@ -49,6 +49,10 @@
             android:name=".Login"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".mobileNo_auth"
+            android:exported="false">
+
+        </activity>
     </application>
 
 </manifest>

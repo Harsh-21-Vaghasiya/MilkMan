@@ -39,7 +39,7 @@ public class firstpage extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(firstpage.this,Call_Register_Activity.class);
+                Intent intent =new Intent(firstpage.this,SignUP.class);
                 startActivity(intent);
                 finish();
             }

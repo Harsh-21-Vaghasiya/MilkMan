@@ -31,7 +31,7 @@ public class Call_Register_Activity extends AppCompatActivity {
             }
             else
             {
-                Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+910000000000"));
+                Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:+917016541653"));
                 startActivity(i);
             }
 
@@ -42,7 +42,7 @@ public class Call_Register_Activity extends AppCompatActivity {
 
     public void skip(View view){
         try{
-            Intent i = new Intent(this, SignUP.class);
+            Intent i = new Intent(this, firstpage.class);
             startActivity(i);
         }catch(Exception e){
             Log.e("errorr","error at call_register_activity.java as "+ e.getMessage());

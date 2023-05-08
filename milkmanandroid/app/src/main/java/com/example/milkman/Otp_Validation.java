@@ -5,16 +5,12 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.chaos.view.PinView;
 import com.example.milkman.GLOBAL.Gloabal_details;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Otp_Validation extends AppCompatActivity {
     TextInputLayout Enter_Your_Opt_Text_Box;
@@ -53,7 +49,7 @@ public class Otp_Validation extends AppCompatActivity {
                 if (androidOtp.equals(otp_from_mobile_no_auth)) {
                     Toast.makeText(getApplicationContext(), "Mobile no sucessfull Authenticated", Toast.LENGTH_LONG).show();
 
-                    Intent intent = new Intent(Otp_Validation.this, Call_Register_Activity.class);
+                    Intent intent = new Intent(Otp_Validation.this, Provider_Verification.class);
                     startActivity(intent);
                     finish();
                 }

@@ -10,4 +10,15 @@
     <color name="otpback">#E5E5E5</color>
     <color name="Green">#00ff00</color>
     <color name="blue">#0000FF</color>
+
+
+    <color name="gray">#E5E5E5</color>
+    <color name="red">#D21312</color>
+
+    <color name="black_900">#000000</color>
+    <color name="light_blue_300">#5dc5ff</color>
+    <color name="white_A700">#ffffff</color>
+    <color name="notification_border">#C5C5BD</color>
+    <color name="notification_color">#89F8C3</color>
+    <color name="more">#ACA8A8</color>
 </resources>

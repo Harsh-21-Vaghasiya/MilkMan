@@ -12,7 +12,7 @@ public class Gloabal_details {
 //    public static String IP = "192.168.1.13";
 
 //    public static String IP = "192.168.43.244";
-public static String IP = "192.168.150.110";
+public static String IP = "192.168.1.9";
 
     public static String PORT = "80";
 //    public static String PORT = "8080";

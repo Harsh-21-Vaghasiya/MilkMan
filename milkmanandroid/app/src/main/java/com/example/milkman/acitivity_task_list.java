@@ -3,7 +3,9 @@ package com.example.milkman;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -36,5 +38,12 @@ public class acitivity_task_list extends AppCompatActivity {
         //        error
         recyclerView.setAdapter(new MyAdapter(getApplicationContext(), items));
 
+    }
+
+    public void  nexttocustomer(View view)
+    {
+        Intent intent = new Intent(acitivity_task_list.this, Customer_Edit_Profile.class);
+        startActivity(intent);
+        finish();
     }
 }

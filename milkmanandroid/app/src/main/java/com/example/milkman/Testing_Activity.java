@@ -14,7 +14,7 @@ public class Testing_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_testing);
     }
     public void call_activity(View view){
-        Intent i =new Intent(this,Call_Register_Activity.class);
+        Intent i =new Intent(this,Provider_Profile.class);
         startActivity(i);
     }
     public void normal(View view){

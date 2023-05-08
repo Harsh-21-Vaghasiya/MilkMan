@@ -6,7 +6,9 @@
     android:background="@drawable/searchbar"
     android:layout_gravity="center"
     android:layout_marginTop="10dp"
+
     >
+
     <TextView
         android:id="@+id/Number"
         android:layout_width="wrap_content"
@@ -32,6 +34,7 @@
         android:layout_height="27dp"
         android:background="@drawable/button"
         android:text="View"
+        android:onClick="nexttoprovider"
         android:textColor="@color/white"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"/>

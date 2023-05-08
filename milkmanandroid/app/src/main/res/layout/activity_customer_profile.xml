@@ -22,6 +22,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit_profile"
                 android:layout_gravity="end"
+                android:onClick="nextcustomerreport"
                 android:layout_marginRight="20dp"/>
 
         </androidx.appcompat.widget.Toolbar>

@@ -17,7 +17,7 @@ public class Customer_Profile extends AppCompatActivity {
 
     public void  nextcustomerreport(View view)
     {
-        Intent intent = new Intent(Customer_Profile.this, Customer_Report.class);
+        Intent intent = new Intent(Customer_Profile.this, Customer_Edit_Profile.class);
         startActivity(intent);
         finish();
     }

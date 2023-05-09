@@ -21,4 +21,5 @@ public class Testing_Activity extends AppCompatActivity {
         Intent i = new Intent(this, mobileNo_auth.class);
         startActivity(i);
     }
+
 }

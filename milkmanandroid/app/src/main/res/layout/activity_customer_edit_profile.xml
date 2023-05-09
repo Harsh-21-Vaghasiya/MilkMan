@@ -122,6 +122,7 @@
         </LinearLayout>
         <Button
             android:id="@+id/Update"
+            android:onClick="update"
             android:layout_width="308dp"
             android:layout_height="55dp"
             android:layout_gravity="center"

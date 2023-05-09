@@ -42,7 +42,7 @@ public class acitivity_task_list extends AppCompatActivity {
 
     public void  nexttocustomer(View view)
     {
-        Intent intent = new Intent(acitivity_task_list.this, Customer_Edit_Profile.class);
+        Intent intent = new Intent(acitivity_task_list.this, Provider_More.class);
         startActivity(intent);
         finish();
     }

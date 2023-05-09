@@ -34,13 +34,16 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="profilePage"
         >
         <ImageView
+
             android:layout_width="25dp"
             android:layout_height="35dp"
             android:src="@drawable/profile_icon"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="30dp"
+            tools:ignore="DuplicateIds" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,6 +55,7 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Customer_Report"
         android:layout_width="321dp"
@@ -66,6 +70,7 @@
             android:src="@drawable/report"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="30dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,6 +82,7 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Payment"
         android:layout_width="321dp"
@@ -84,6 +90,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="SalesPage"
         >
         <ImageView
             android:layout_width="25dp"
@@ -109,6 +116,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="SalesPage"
         >
 
         <ImageView
@@ -128,6 +136,7 @@
             />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/Language"
         android:layout_width="321dp"
@@ -161,6 +170,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="Logout"
         >
         <ImageView
             android:layout_width="27dp"

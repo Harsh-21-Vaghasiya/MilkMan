@@ -19,12 +19,11 @@
             android:background="@color/blue">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/next"
-                android:layout_marginLeft="350dp"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="330dp"
                 android:onClick="next"
-                />
+                android:src="@drawable/next" />
 
         </androidx.appcompat.widget.Toolbar>
 

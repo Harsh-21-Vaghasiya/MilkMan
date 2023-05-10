@@ -24,11 +24,11 @@
                 android:layout_marginRight="20dp"/>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="280dp"
                 android:onClick="nexttoprovidermore"
-                android:layout_marginLeft="300dp"/>
+                android:src="@drawable/next" />
 
         </androidx.appcompat.widget.Toolbar>
 

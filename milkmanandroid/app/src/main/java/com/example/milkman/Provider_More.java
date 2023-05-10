@@ -41,5 +41,27 @@ public class Provider_More extends AppCompatActivity {
         finish();
     }
 
+    public void gotoarea(View view){
+        Intent intent = new Intent(Provider_More.this, Area.class);
+        startActivity(intent);
+        finish();
+    }
 
+    public void selectlanguage(View view){
+        Intent intent = new Intent(Provider_More.this, firstpage.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void addmilk(View view){
+        Intent intent = new Intent(Provider_More.this, Add_Provider.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void customerreport(View view){
+        Intent intent = new Intent(Provider_More.this, Customer_Report.class);
+        startActivity(intent);
+        finish();
+    }
 }

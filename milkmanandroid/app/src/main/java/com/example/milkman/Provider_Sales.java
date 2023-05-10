@@ -17,7 +17,7 @@ public class Provider_Sales extends AppCompatActivity {
 
     public void  addprovider(View view)
     {
-        Intent intent = new Intent(Provider_Sales.this, Area.class);
+        Intent intent = new Intent(Provider_Sales.this, Provider_More.class);
         startActivity(intent);
         finish();
     }

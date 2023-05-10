@@ -18,7 +18,7 @@ public class Customer_Edit_Profile extends AppCompatActivity {
 
     public void  next(View view)
     {
-        Intent intent = new Intent(Customer_Edit_Profile.this, Customer_Profile.class);
+        Intent intent = new Intent(Customer_Edit_Profile.this, Provider_More.class);
         startActivity(intent);
         finish();
     }

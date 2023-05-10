@@ -16,7 +16,7 @@ public class Customer_Report extends AppCompatActivity {
 
     public void  nexttoprovider(View view)
     {
-        Intent intent = new Intent(Customer_Report.this, Provider_Profile.class);
+        Intent intent = new Intent(Customer_Report.this, Provider_Sales.class);
         startActivity(intent);
         finish();
     }

@@ -15,12 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue">
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/next"
-                android:layout_marginLeft="350dp"
-                android:onClick="nexttoproviderseles"/>
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="330dp"
+
+                android:onClick="nexttoproviderseles"
+                android:src="@drawable/next" />
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -57,12 +59,40 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/addmilk"
+        android:layout_width="321dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/more_design"
+        android:layout_marginTop="20dp"
+        android:onClick="addmilk"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="32dp"
+            android:src="@drawable/report"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
         android:id="@+id/Customer_Report"
         android:layout_width="321dp"
         android:layout_height="65dp"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="customerreport"
         >
         <ImageView
             android:layout_width="25dp"
@@ -90,7 +120,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
-        android:onClick="SalesPage"
+        android:onClick="gotoarea"
         >
         <ImageView
             android:layout_width="25dp"
@@ -144,6 +174,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/more_design"
         android:layout_marginTop="20dp"
+        android:onClick="selectlanguage"
         >
         <ImageView
             android:layout_width="40dp"

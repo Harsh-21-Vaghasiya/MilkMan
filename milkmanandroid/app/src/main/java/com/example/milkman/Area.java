@@ -14,9 +14,9 @@ public class Area extends AppCompatActivity {
         setContentView(R.layout.activity_area);
     }
 
-    public void  addp2(View view)
+    public void  homes(View view)
     {
-        Intent intent = new Intent(Area.this, Add_Provider.class);
+        Intent intent = new Intent(Area.this, Provider_More.class);
         startActivity(intent);
         finish();
     }

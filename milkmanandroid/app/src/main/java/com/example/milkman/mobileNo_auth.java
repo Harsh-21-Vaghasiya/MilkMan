@@ -31,6 +31,13 @@ public class mobileNo_auth extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                if(mobileno.length()<10){
+
+                    Toast.makeText(mobileNo_auth.this, "Enter correct Number ", Toast.LENGTH_LONG).show();
+
+                }
+                else{
+
 //                For Generate random otp
                 Random otp = new Random();
                 int otpCount = 0;
@@ -46,7 +53,7 @@ public class mobileNo_auth extends AppCompatActivity {
                 Intent intent=new Intent(mobileNo_auth.this,Otp_Validation.class);
                 intent.putExtra("RandomGeneratedOtp",generatedOtp);
                 startActivity(intent);
-
+            }
             }
         });
     }

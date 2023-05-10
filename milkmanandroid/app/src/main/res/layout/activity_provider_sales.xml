@@ -15,19 +15,11 @@
             android:layout_height="wrap_content"
             android:background="@color/blue">
 
-            <ImageView
-                android:id="@+id/home"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/home"
-                android:layout_gravity="end|center"
-                android:layout_marginRight="20dp"
-                />
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:layout_marginLeft="280dp"
+                android:layout_marginLeft="300dp"
                 android:onClick="addprovider"
                 android:src="@drawable/next" />
 

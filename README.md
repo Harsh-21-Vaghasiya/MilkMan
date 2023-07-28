@@ -1,10 +1,5 @@
 # MilkMan
 
-![Untitled](https://github.com/Harsh-21-Vaghasiya/MilkMan/assets/83325046/f898b75b-5164-4d4f-82f0-2b7ad7b8d27d)
-
-
-
-
 This application is made to help people By providing Milk Selevery Service.
 In the village, most people collect milk at the dairy. But in the city, most people want home delivery of milk, and this system is running in the city. But the problem is that to keep a record of the past delivery data, if anyone wants to make changes in the daily milk quantity, it will cause more confusion for the milkman.
 

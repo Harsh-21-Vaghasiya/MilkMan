@@ -33,7 +33,9 @@ We used different dependencies to create the app.
 
 Photos:
 ->Login Page
-![image](https://github.com/Harsh-21-Vaghasiya/MilkMan/assets/83325046/336fc953-66b1-4f55-a864-f5bbca85426f)
+
+![Untitled](https://github.com/Harsh-21-Vaghasiya/MilkMan/assets/83325046/f898b75b-5164-4d4f-82f0-2b7ad7b8d27d)
+
 ->Signup Page
 ![image](https://github.com/Harsh-21-Vaghasiya/MilkMan/assets/83325046/56009d31-98e7-4624-84e4-7575c3cd14c9)
 ->Mobile No
